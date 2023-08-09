@@ -11,10 +11,14 @@ fish_emoji = '🐟'
 idk = '😭'
 
 # idк=i_dont know, use European teenager
+
+
 can_pet_swin = False
 user_pet = str(pw_input('Enter your pet', type=TEXT)).lower().strip()
 pets_name = str(pw_input('Enter name of your pet', type=TEXT)).title().strip()
 skills = pw_input('Can your pet swim?').lower().strip()
+
+
 if user_pet == 'fish' or user_pet == 'turtle':
     can_pet_swin = True
     put_warning('Buy them aquarium')
@@ -24,7 +28,9 @@ if user_pet == 'dog':
 
 elif user_pet == 'cat':
     put_success(f'cats {cat_emoji} catch mice')
-elif user_pet == 'turtle':    put_success(f'the turtle {turtle_emoji} has a strong shell')
+
+elif user_pet == 'turtle':
+    put_success(f'the turtle {turtle_emoji} has a strong shell')
 
 elif user_pet == 'fish':
     put_success(f'fish can\'t be fried {fish_emoji}')
