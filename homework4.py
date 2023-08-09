@@ -16,7 +16,6 @@ idk = '😭'
 can_pet_swin = False
 user_pet = str(pw_input('Enter your pet', type=TEXT)).lower().strip()
 pets_name = str(pw_input('Enter name of your pet', type=TEXT)).title().strip()
-skills = pw_input('Can your pet swim?').lower().strip()
 
 
 if user_pet == 'fish' or user_pet == 'turtle':
